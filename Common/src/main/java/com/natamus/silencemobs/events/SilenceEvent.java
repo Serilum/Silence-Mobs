@@ -1,7 +1,7 @@
 package com.natamus.silencemobs.events;
 
 import com.natamus.collective.functions.EntityFunctions;
-import com.natamus.collective.functions.StringFunctions;
+import com.natamus.collective.functions.MessageFunctions;
 import com.natamus.silencemobs.config.ConfigHandler;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
@@ -61,7 +61,7 @@ public class SilenceEvent {
 				}
 			}
 			else {
-				StringFunctions.sendMessage(player, "The " + entityname.toLowerCase() + " has been unsilenced.", ChatFormatting.DARK_GREEN);
+				MessageFunctions.sendMessage(player, "The " + entityname.toLowerCase() + " has been unsilenced.", ChatFormatting.DARK_GREEN);
 			}
 		}
 		else {
@@ -70,7 +70,7 @@ public class SilenceEvent {
 				entity.setCustomName(Component.literal("Silenced " + entityname));
 			}
 			else {
-				StringFunctions.sendMessage(player, "The " + entityname.toLowerCase() + " has been silenced.", ChatFormatting.DARK_GREEN);
+				MessageFunctions.sendMessage(player, "The " + entityname.toLowerCase() + " has been silenced.", ChatFormatting.DARK_GREEN);
 			}
 		}
 		

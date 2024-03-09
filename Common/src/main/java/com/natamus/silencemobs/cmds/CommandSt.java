@@ -3,7 +3,7 @@ package com.natamus.silencemobs.cmds;
 import com.mojang.brigadier.CommandDispatcher;
 import com.mojang.brigadier.context.CommandContext;
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
-import com.natamus.collective.functions.StringFunctions;
+import com.natamus.collective.functions.MessageFunctions;
 import com.natamus.silencemobs.config.ConfigHandler;
 import net.minecraft.ChatFormatting;
 import net.minecraft.commands.CommandSourceStack;
@@ -39,7 +39,7 @@ public class CommandSt {
 		if (ConfigHandler.mustHoldStick) {
 			ItemStack held = player.getItemInHand(InteractionHand.MAIN_HAND);
 			if (!held.sameItem(new ItemStack(Items.STICK, 1))) {
-				StringFunctions.sendMessage(player, "You must hold a stick in your main hand to transform it into a silence-stick.", ChatFormatting.DARK_RED);
+				MessageFunctions.sendMessage(player, "You must hold a stick in your main hand to transform it into a silence-stick.", ChatFormatting.DARK_RED);
 				return;
 			}
 			player.getMainHandItem().shrink(1);
@@ -48,7 +48,7 @@ public class CommandSt {
 		ItemStack silencestick = new ItemStack(Items.STICK, 1);
 		silencestick.setHoverName(Component.literal(ChatFormatting.GOLD + "The Silence Stick"));
 		player.addItem(silencestick);
-		StringFunctions.sendMessage(player, "You have been given The Silence Stick! Handle with care.", ChatFormatting.DARK_GREEN);
+		MessageFunctions.sendMessage(player, "You have been given The Silence Stick! Handle with care.", ChatFormatting.DARK_GREEN);
 		return;			
 	}
 }
