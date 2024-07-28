@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "silencemobs",
-  "version": "3.3",
+  "version": "3.5",
 
   "name": "Silence Mobs",
   "description": "Adds the functionality to silence a mob with The Silence Stick, which can be collected by transforming a stick via the /silencestick command.",
@@ -23,7 +23,7 @@
     "fabric": "*",
     "minecraft": ">=1.20",
     "java": ">=21",
-    "collective": ">=7.54"
+    "collective": ">=7.78"
   },
 
   "custom": {
@@ -44,12 +44,9 @@
 	  " Alister",
 	  " Andrean Olgo",
 	  " aternosorg",
-	  " BirdieMiner",
 	  " Cherriesaurus",
-	  " Jack",
-	  " Jeremy Langford",
 	  " Michael W. S.",
-	  " pepe1191",
+	  " Nahuel Fernandez",
 	  " Shana Gitnick",
 	  " Tyler Behl"
   ]
