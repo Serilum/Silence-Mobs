@@ -1,6 +1,7 @@
 package com.natamus.silencemobs;
 
 import com.natamus.collective.check.RegisterMod;
+import com.natamus.collective.check.ShouldLoadCheck;
 import com.natamus.silencemobs.neoforge.config.IntegrateNeoForgeConfig;
 import com.natamus.silencemobs.neoforge.events.NeoForgeEntityEvent;
 import com.natamus.silencemobs.util.Reference;
@@ -14,6 +15,10 @@ import net.neoforged.fml.event.lifecycle.FMLLoadCompleteEvent;
 public class ModNeoForge {
 	
 	public ModNeoForge(IEventBus modEventBus) {
+		if (!ShouldLoadCheck.shouldLoad(Reference.MOD_ID)) {
+			return;
+		}
+
 		modEventBus.addListener(this::loadComplete);
 
 		setGlobalConstants();

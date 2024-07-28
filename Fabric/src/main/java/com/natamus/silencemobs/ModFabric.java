@@ -1,6 +1,7 @@
 package com.natamus.silencemobs;
 
 import com.natamus.collective.check.RegisterMod;
+import com.natamus.collective.check.ShouldLoadCheck;
 import com.natamus.collective.fabric.callbacks.CollectiveEntityEvents;
 import com.natamus.silencemobs.cmds.CommandSt;
 import com.natamus.silencemobs.events.SilenceEvent;
@@ -15,6 +16,10 @@ public class ModFabric implements ModInitializer {
 	
 	@Override
 	public void onInitialize() {
+		if (!ShouldLoadCheck.shouldLoad(Reference.MOD_ID)) {
+			return;
+		}
+
 		setGlobalConstants();
 		ModCommon.init();
 
