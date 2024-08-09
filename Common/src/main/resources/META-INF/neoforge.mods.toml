@@ -1,0 +1,44 @@
+modLoader="javafml"
+loaderVersion="*"
+license="All rights reserved"
+issueTrackerURL="https://github.com/Serilum/.issue-tracker/labels/Mod:%20Silence%20Mobs"
+logoFile="icon.png"
+
+[[mods]]
+modId="silencemobs"
+version="3.5"
+displayName="Silence Mobs"
+displayURL="https://serilum.com/mod/silence-mobs"
+authors="Rick South"
+description='''Adds the functionality to silence a mob with The Silence Stick, which can be collected by transforming a stick via the /silencestick command.
+'''
+credits='''Thank you very much to my Membership sponsors for supporting the development of this mod:  
+
+Alister, Andrean Olgo, aternosorg, Cherriesaurus, Michael W. S., Nahuel Fernandez, Shana Gitnick, Tyler Behl   
+
+If you would like to contribute too, check out https://serilum.com/donate. Appreciate it! <3   
+'''
+
+[[dependencies.silencemobs]]
+    modId="collective"
+    type="required"
+    versionRange="[7.80,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.silencemobs]]
+    modId="minecraft"
+    type="required"
+    versionRange="[1.21,1.21.1]"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.silencemobs]]
+    modId="neoforge"
+    type="required"
+    versionRange="[21.0.31,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[mixins]]
+    config = "silencemobs.mixins.json"
