@@ -4,11 +4,9 @@ import com.natamus.silencemobs.cmds.CommandSt;
 import com.natamus.silencemobs.events.SilenceEvent;
 import net.minecraft.world.entity.Entity;
 import net.neoforged.bus.api.SubscribeEvent;
-import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.RegisterCommandsEvent;
 import net.neoforged.neoforge.event.entity.living.LivingIncomingDamageEvent;
 
-@EventBusSubscriber
 public class NeoForgeEntityEvent {
 	@SubscribeEvent
 	public static void registerCommands(RegisterCommandsEvent e) {
