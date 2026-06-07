@@ -38,15 +38,15 @@ public class CommandSt {
 		if (ConfigHandler.mustHoldStick) {
 			ItemStack held = player.getItemInHand(InteractionHand.MAIN_HAND);
 			if (!held.getItem().equals(Items.STICK)) {
-				MessageFunctions.sendMessage(player, "You must hold a stick in your main hand to transform it into a silence-stick.", ChatFormatting.DARK_RED);
+				MessageFunctions.sendTranslatableMessage(player, "collective.silencemobs.message.mustholdstick", ChatFormatting.DARK_RED);
 				return;
 			}
 			player.getMainHandItem().shrink(1);
 		}
 		
 		ItemStack silencestick = new ItemStack(Items.STICK, 1);
-		silencestick.setHoverName(Component.literal(ChatFormatting.GOLD + "The Silence Stick"));
+		silencestick.setHoverName(Component.translatable("collective.silencemobs.gui.silencestick").withStyle(ChatFormatting.GOLD));
 		player.addItem(silencestick);
-		MessageFunctions.sendMessage(player, "You have been given The Silence Stick! Handle with care.", ChatFormatting.DARK_GREEN);
+		MessageFunctions.sendTranslatableMessage(player, "collective.silencemobs.message.givensilencestick", ChatFormatting.DARK_GREEN);
 	}
 }
