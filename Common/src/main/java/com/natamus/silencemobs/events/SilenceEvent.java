@@ -61,16 +61,16 @@ public class SilenceEvent {
 				}
 			}
 			else {
-				MessageFunctions.sendMessage(player, "The " + entityname.toLowerCase() + " has been unsilenced.", ChatFormatting.DARK_GREEN);
+				MessageFunctions.sendTranslatableMessage(player, "collective.silencemobs.message.unsilenced", ChatFormatting.DARK_GREEN, entityname.toLowerCase());
 			}
 		}
 		else {
 			entity.setSilent(true);
 			if (ConfigHandler.renameSilencedMobs) {
-				entity.setCustomName(Component.literal("Silenced " + entityname));
+				entity.setCustomName(Component.translatable("collective.silencemobs.gui.silenced", entityname));
 			}
 			else {
-				MessageFunctions.sendMessage(player, "The " + entityname.toLowerCase() + " has been silenced.", ChatFormatting.DARK_GREEN);
+				MessageFunctions.sendTranslatableMessage(player, "collective.silencemobs.message.silenced", ChatFormatting.DARK_GREEN, entityname.toLowerCase());
 			}
 		}
 		
