@@ -9,11 +9,12 @@ import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.Commands;
 import net.minecraft.server.permissions.Permissions;
 import net.minecraft.core.component.DataComponents;
-import net.minecraft.network.chat.Component;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.component.CustomData;
 
 public class CommandSt {
 	public static void register(CommandDispatcher<CommandSourceStack> dispatcher) {
@@ -47,7 +48,12 @@ public class CommandSt {
 		}
 		
 		ItemStack silencestick = new ItemStack(Items.STICK, 1);
-		silencestick.set(DataComponents.CUSTOM_NAME, Component.translatable("collective.silencemobs.gui.silencestick").withStyle(ChatFormatting.GOLD));
+		silencestick.set(DataComponents.CUSTOM_NAME, MessageFunctions.getTranslatableComponent("collective.silencemobs.gui.silencestick").withStyle(ChatFormatting.GOLD));
+
+		CompoundTag tag = new CompoundTag();
+		tag.putBoolean("silencestick", true);
+		silencestick.set(DataComponents.CUSTOM_DATA, CustomData.of(tag));
+
 		player.addItem(silencestick);
 		MessageFunctions.sendTranslatableMessage(player, "collective.silencemobs.message.givensilencestick", ChatFormatting.DARK_GREEN);
 	}
