@@ -7,7 +7,6 @@ import com.natamus.silencemobs.config.ConfigHandler;
 import net.minecraft.ChatFormatting;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.Commands;
-import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
@@ -45,7 +44,8 @@ public class CommandSt {
 		}
 		
 		ItemStack silencestick = new ItemStack(Items.STICK, 1);
-		silencestick.setHoverName(Component.translatable("collective.silencemobs.gui.silencestick").withStyle(ChatFormatting.GOLD));
+		silencestick.setHoverName(MessageFunctions.getTranslatableComponent("collective.silencemobs.gui.silencestick").withStyle(ChatFormatting.GOLD));
+		silencestick.getOrCreateTag().putBoolean("silencestick", true);
 		player.addItem(silencestick);
 		MessageFunctions.sendTranslatableMessage(player, "collective.silencemobs.message.givensilencestick", ChatFormatting.DARK_GREEN);
 	}
