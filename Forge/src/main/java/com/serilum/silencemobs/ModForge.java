@@ -1,10 +1,10 @@
-package com.natamus.silencemobs;
+package com.serilum.silencemobs;
 
 import com.natamus.collective.check.RegisterMod;
 import com.natamus.collective.check.ShouldLoadCheck;
-import com.natamus.silencemobs.forge.config.IntegrateForgeConfig;
-import com.natamus.silencemobs.forge.events.ForgeEntityEvent;
-import com.natamus.silencemobs.util.Reference;
+import com.serilum.silencemobs.forge.config.IntegrateForgeConfig;
+import com.serilum.silencemobs.forge.events.ForgeEntityEvent;
+import com.serilum.silencemobs.util.Reference;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.ModLoadingContext;
@@ -32,7 +32,7 @@ public class ModForge {
 	}
 
 	private void loadComplete(final FMLLoadCompleteEvent event) {
-    	MinecraftForge.EVENT_BUS.register(ForgeEntityEvent.class);
+		MinecraftForge.EVENT_BUS.register(ForgeEntityEvent.class);
 	}
 
 	private static void setGlobalConstants() {

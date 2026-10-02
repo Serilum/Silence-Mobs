@@ -1,8 +1,8 @@
-package com.natamus.silencemobs;
+package com.serilum.silencemobs;
 
 import com.natamus.collective.translations.ServerTranslationPack;
-import com.natamus.silencemobs.config.ConfigHandler;
-import com.natamus.silencemobs.util.Reference;
+import com.serilum.silencemobs.config.ConfigHandler;
+import com.serilum.silencemobs.util.Reference;
 
 public class ModCommon {
 

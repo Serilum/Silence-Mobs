@@ -1,9 +1,9 @@
-package com.natamus.silencemobs.events;
+package com.serilum.silencemobs.events;
 
 import com.natamus.collective.functions.EntityFunctions;
 import com.natamus.collective.functions.MessageFunctions;
-import com.natamus.silencemobs.config.ConfigHandler;
-import com.natamus.silencemobs.util.Reference;
+import com.serilum.silencemobs.config.ConfigHandler;
+import com.serilum.silencemobs.util.Reference;
 import net.minecraft.ChatFormatting;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;

@@ -1,7 +1,7 @@
-package com.natamus.silencemobs.forge.config;
+package com.serilum.silencemobs.forge.config;
 
 import com.natamus.collective.config.DuskConfig;
-import com.natamus.silencemobs.util.Reference;
+import com.serilum.silencemobs.util.Reference;
 import net.minecraftforge.client.ConfigScreenHandler;
 import net.minecraftforge.fml.ModLoadingContext;
 

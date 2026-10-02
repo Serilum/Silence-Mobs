@@ -1,7 +1,7 @@
-package com.natamus.silencemobs.config;
+package com.serilum.silencemobs.config;
 
 import com.natamus.collective.config.DuskConfig;
-import com.natamus.silencemobs.util.Reference;
+import com.serilum.silencemobs.util.Reference;
 
 import java.util.Arrays;
 import java.util.HashMap;

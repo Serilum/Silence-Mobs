@@ -1,11 +1,11 @@
-package com.natamus.silencemobs;
+package com.serilum.silencemobs;
 
 import com.natamus.collective.check.RegisterMod;
 import com.natamus.collective.check.ShouldLoadCheck;
 import com.natamus.collective.fabric.callbacks.CollectiveEntityEvents;
-import com.natamus.silencemobs.cmds.CommandSt;
-import com.natamus.silencemobs.events.SilenceEvent;
-import com.natamus.silencemobs.util.Reference;
+import com.serilum.silencemobs.cmds.CommandSt;
+import com.serilum.silencemobs.events.SilenceEvent;
+import com.serilum.silencemobs.util.Reference;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.minecraft.world.damagesource.DamageSource;

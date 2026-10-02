@@ -1,9 +1,9 @@
-package com.natamus.silencemobs.cmds;
+package com.serilum.silencemobs.cmds;
 
 import com.mojang.brigadier.CommandDispatcher;
 import com.mojang.brigadier.context.CommandContext;
 import com.natamus.collective.functions.MessageFunctions;
-import com.natamus.silencemobs.config.ConfigHandler;
+import com.serilum.silencemobs.config.ConfigHandler;
 import net.minecraft.ChatFormatting;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.Commands;
