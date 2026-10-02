@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "id": "silencemobs",
-  "version": "4.0",
+  "version": "4.1",
 
   "name": "Silence Mobs",
   "description": "Adds the functionality to silence a mob with The Silence Stick, which can be collected by transforming a stick via the /silencestick command.",
-  "authors": [ "Rick South" ],
+  "authors": [ "Serilum" ],
   "contact": {
     "homepage": "https://serilum.com/mod/silence-mobs",
     "sources": "https://github.com/Serilum/Silence-Mobs",
@@ -16,14 +16,14 @@
   "icon": "icon.png",
 
   "environment": "*",
-  "entrypoints": { "main": [ "com.natamus.silencemobs.ModFabric" ], "modmenu": [ "com.natamus.silencemobs.fabric.config.IntegrateModMenu" ] },
+  "entrypoints": { "main": [ "com.serilum.silencemobs.ModFabric" ], "modmenu": [ "com.serilum.silencemobs.fabric.config.IntegrateModMenu" ] },
 
   "depends": {
     "fabricloader": ">=0.18.0",
     "fabric-api": "*",
     "minecraft": ">=26.3",
     "java": ">=25",
-    "collective": ">=8.39"
+    "collective": ">=8.40"
   },
 
   "custom": {
@@ -38,7 +38,7 @@
 	  " ",
 	  "Thank you very much to my Membership sponsors for supporting the development of this mod!",
 	  " ",
-	  "If you would like to contribute too, check out https://serilum.com/donate.",
+	  "If you would like to contribute too, check out https://serilum.com/donate",
 	  " ",
 	  "Membership sponsors:",
 	  " Andrean Olgo",
